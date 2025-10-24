@@ -40,9 +40,8 @@ Minha capacidade de entrega é construída com as seguintes tecnologias:
 
 No meu portfólio, você encontrará a descrição completa, metodologia e resultados dos seguintes projetos:
 
-- **[Gerador de gráfico do arquivo Excel](https://github.com/Rilen/xlsx2chart):** Automação e extração de insights de dados brutos.
-- **[Previsão de Churn (ML)](https://github.com/rilen/PROJETO-CHURN-REAL):** Modelo de classificação para retenção de clientes.
-- **[Otimização Agrícola (Geoprocessamento)](https://github.com/rilen/PROJETO-GEOPROCESSAMENTO-AGRO):** Análise geoespacial aplicada.
+- **[Gerador de gráfico de Dados obtidos pelo arquivo Excel](https://github.com/Rilen/xlsx2chart):**
+- **[Análise Preditiva de Estresse Hídrico Agrícola](https://github.com/rilen/IrrigaSeca):**
 - *Em breve mais projetos e casos de uso...*
 
 ---
