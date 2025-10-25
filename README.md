@@ -55,10 +55,8 @@ No meu portfólio, você encontrará a descrição completa, metodologia e resul
 
 ---
 
-## 📧 Meus Links Profissionais
+## 💼 Meus Links Profissionais
 
-| Plataforma | Link |
-| :--- | :--- |
-| **LinkedIn** | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rilen/) |
-| **Email** | [![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rilen.lima@gmail.com) |
-| **Showcase Visual** | [![Portfolio](https://img.shields.io/badge/Portfólio%20Visual-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://rilen.github.io/portfolio/) |
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rilen/)
+[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rilen.lima@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfólio%20Visual-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://rilen.github.io/portfolio/)
