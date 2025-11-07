@@ -3687,3 +3687,42 @@ input, select, textarea {
 			}
 
 	}
+.gallery a.image {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery a.image .caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Efeito de nevoeiro claro */
+  backdrop-filter: blur(5px); /* Nevoeiro com blur (suporte moderno) */
+  color: #000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.gallery a.image .caption .title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.gallery a.image:hover .caption {
+  opacity: 1;
+}
+
+@media screen and (max-width: 736px) {
+  .gallery a.image .caption {
+    opacity: 1; /* Sempre visível no mobile */
+  }
+}
