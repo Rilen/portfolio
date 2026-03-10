@@ -3,7 +3,7 @@
 Para transformar o seu chat de uma "demonstração" em uma ferramenta de IA funcional, siga o guia abaixo. Este método utiliza o plano gratuito da **Cloudflare** e do **Google Gemini**.
 
 ## 1. Sua Chave do Gemini
-Você já tem a chave: `AIzaSyDLk4l3H3vM2gy9LZ9AuvUZjcAMYSkLBIg`
+Você deve gerar sua chave no Google AI Studio e configurá-la apenas como um **Secret** no Cloudflare Wrangler. *Nunca anote a chave real em arquivos do repositório.*
 
 ## 2. Publicar a API via Terminal (Recomendado)
 Acesse o terminal na pasta do projeto e execute:

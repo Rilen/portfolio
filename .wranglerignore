@@ -14,8 +14,8 @@ rilen-bot-api/
 edição/
 **/edi*/**
 **/*.xcf
-public/assets/sass/
-public/assets/webfonts/*.svg
+assets/sass/
+assets/webfonts/*.svg
 
 # Arquivos de Lock e Config (não são arquivos do site)
 package.json
