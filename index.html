@@ -14,6 +14,135 @@
 	<script src="https://kit.fontawesome.com/c8e235e165.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script>(function () { emailjs.init("H-yPKZR-FXHhE96fK"); })();</script>
+	<script type="application/ld+json">
+		{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Rilen Tavares Lima",
+		"jobTitle": "Data Scientist & Full Stack Developer",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Rio das Ostras",
+			"addressRegion": "RJ",
+			"addressCountry": "BR"
+		},
+		"url": "https://sua-url.com",
+		"knowsAbout": ["Big Data", "AI", "CyberSecurity", "TypeScript", "Linux"]
+		}
+	</script>
+	<style>
+		/* Estilos da Stack */
+		#stack .table-wrapper table img {
+			margin: 0.2rem;
+			vertical-align: middle;
+			transition: transform 0.2s ease, filter 0.2s ease;
+		}
+
+		#stack .table-wrapper table img:hover {
+			transform: scale(1.1);
+			filter: brightness(1.2);
+		}
+
+		#stack table td {
+			vertical-align: middle;
+		}
+
+		#stack table strong {
+			color: #ffe4b4;
+		}
+
+		/* Barra de Acessibilidade */
+		.a11y-bar {
+			position: fixed;
+			top: 50%;
+			right: 1.5rem;
+			transform: translateY(-50%);
+			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+			z-index: 10000;
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(10px);
+			padding: 0.75rem;
+			border-radius: 2rem;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			transition: all 0.3s ease;
+		}
+
+		.a11y-bar button {
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 50%;
+			border: none;
+			background: rgba(255, 255, 255, 0.1);
+			color: white;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.2rem;
+			transition: background 0.2s, transform 0.2s;
+			padding: 0;
+			line-height: normal;
+			box-shadow: none;
+		}
+
+		.a11y-bar button:hover {
+			background: #ffe4b4;
+			color: #2e2b37;
+			transform: scale(1.1);
+		}
+
+		/* RilenBot Widget */
+		#rilenbot-trigger {
+			position: fixed;
+			bottom: 2rem;
+			right: 2rem;
+			z-index: 10001;
+			width: 4rem;
+			height: 4rem;
+			background: linear-gradient(135deg, #726193, #e37b7c);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-size: 1.8rem;
+			cursor: pointer;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+			transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		}
+
+		#rilenbot-trigger:hover {
+			transform: scale(1.1) rotate(5deg);
+		}
+
+		/* High Contrast Mode */
+		body.high-contrast {
+			filter: contrast(1.2) brightness(1.1);
+		}
+		body.high-contrast section.panel {
+			background-image: none !important;
+			background-color: #000 !important;
+		}
+		body.high-contrast strong {
+			color: #ffff00 !important;
+		}
+
+		/* D3 activity mock */
+		#github-activity {
+			width: 100%;
+			height: 120px;
+			margin-top: 1rem;
+			background: rgba(255,255,255,0.05);
+			border-radius: 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 0.7rem;
+			opacity: 0.8;
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -43,7 +172,7 @@
 					</ul>
 				</div>
 				<div class="image filtered span-1-75" data-position="25% 25%">
-					<img src="images/pic01.jpg" alt="Rilen Tavares - Data Scientist" />
+					<img src="images/pic01.jpg" alt="Rilen Tavares - Data Scientist" loading="lazy" />
 				</div>
 			</section>
 
@@ -54,25 +183,25 @@
 					<p>
 						Sou um ativo que une <strong>hardening de cloud computing</strong>,
 						<strong>modelagem preditiva</strong> e <strong>desenvolvimento Full Stack</strong> no mesmo
-						ciclo de entrega. Como usuário de <strong>implante coclear</strong>, desenvolvi <strong>Deep
-							Work nativo</strong> — que proporciona qualidade com foco e precisão técnica em ambientes de
-						alta complexidade.
+						ciclo de entrega. Como usuário de <strong>implante coclear</strong>, desenvolvi o <strong>Deep
+							Work nativo</strong> — uma capacidade excepcional de processamento técnico em silêncio absoluto,
+						onde a arquitetura de dados e código flui com precisão cirúrgica, livre das distrações do ruído ambiente.
 					</p>
 				</div>
 				<div class="inner">
 					<h3 class="major">Eixos de Atuação</h3>
 					<ul class="grid-icons three connected">
-						<li><span class="icon solid fa-brain" title="IA & Machine Learning"><span class="label">IA &
+						<li><span class="icon solid fa-brain" title="IA & Machine Learning" aria-hidden="true"><span class="label">IA &
 									ML</span></span></li>
-						<li><span class="icon solid fa-database" title="Big Data & Engenharia de Dados"><span
+						<li><span class="icon solid fa-database" title="Big Data & Engenharia de Dados" aria-hidden="true"><span
 									class="label">Big Data</span></span></li>
-						<li><span class="icon solid fa-code" title="Full Stack TypeScript / React / Angular"><span
+						<li><span class="icon solid fa-code" title="Full Stack TypeScript / React / Angular" aria-hidden="true"><span
 									class="label">Full Stack</span></span></li>
-						<li><span class="icon solid fa-shield-alt" title="Cybersecurity & GRC"><span class="label">GRC &
+						<li><span class="icon solid fa-shield-alt" title="Cybersecurity & GRC" aria-hidden="true"><span class="label">GRC &
 									Sec</span></span></li>
-						<li><span class="icon solid fa-server" title="Infraestrutura GNU/Linux Sênior"><span
+						<li><span class="icon solid fa-server" title="Infraestrutura GNU/Linux Sênior" aria-hidden="true"><span
 									class="label">Linux</span></span></li>
-						<li><span class="icon solid fa-map-marked-alt" title="Geoespacial & Resiliência Urbana"><span
+						<li><span class="icon solid fa-map-marked-alt" title="Geoespacial & Resiliência Urbana" aria-hidden="true"><span
 									class="label">GeoData</span></span></li>
 					</ul>
 				</div>
@@ -81,7 +210,7 @@
 			<!-- PROJETOS DESTAQUE -->
 			<section class="panel color2" id="projects">
 				<div class="intro color2">
-					<h2 class="major">Projetos em Produção</h2>
+					<h2 class="major">Projetos</h2>
 					<p>Da análise territorial preditiva à gestão condominial premium — soluções completas, da
 						infraestrutura ao deploy.</p>
 				</div>
@@ -91,11 +220,11 @@
 						<!-- PREVE-OSTRAS -->
 						<a href="https://preve-ostras.web.app" target="_blank" class="image filtered span-3"
 							data-position="center">
-							<img src="images/PreveOstras.png" alt="Preve-Ostras" />
+							<img src="images/PreveOstras.png" alt="Preve-Ostras" loading="lazy" />
 							<span class="caption">
 								<span class="title">🌊 Preve-Ostras · Inteligência Territorial</span>
 								<p>Resiliência urbana em tempo real: marés, chuvas e risco (D3.js + React 19).</p>
-								<i class="icon brands fa-github"></i> Ver Repositório
+								<i class="icon brands fa-github" aria-hidden="true"></i> Ver Repositório
 							</span>
 						</a>
 
@@ -216,21 +345,102 @@
 			<section class="panel color5-alt" id="stack">
 				<div class="intro color5">
 					<h2 class="major">Stack & Ferramentas</h2>
-					<p>Tecnologias que uso do diagnóstico ao deploy em produção.</p>
+					<p>Tecnologias que uso do diagnóstico ao deploy em produção. Foco em <strong>resiliência digital</strong> e 
+						<strong>hardening de infraestrutura</strong>, com histórico de mitigação de riscos em ambientes de missão crítica.</p>
 				</div>
-				<div class="inner columns aligned">
-					<div class="span-2-5">
-						<h3 class="major">Data Science & IA</h3>
-						<p>Python · scikit-learn · Pandas · LlamaIndex · NLP · MLOps · Observable Framework · Streamlit
-						</p>
-						<h3 class="major">Full Stack</h3>
-						<p>TypeScript · React 19 · Angular 21 · Vite · Tailwind CSS v4 · Zustand · D3.js · Lucide</p>
-					</div>
-					<div class="span-2-5">
-						<h3 class="major">Cloud & Infra</h3>
-						<p>Firebase (Firestore · Auth · Hosting · Storage) · AWS · Docker · GitHub Actions (CI/CD)</p>
-						<h3 class="major">Segurança & Governança</h3>
-						<p>GNU/Linux · Hardening · GRC · Zabbix · Cacti · Disaster Recovery · RBAC</p>
+				<div class="inner columns">
+					<div class="span-4-5">
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Camada</th>
+										<th>Tecnologias</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong>Data Science / IA</strong></td>
+										<td>
+											<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"
+												alt="Python" />
+											<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"
+												alt="scikit-learn" />
+											<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"
+												alt="Pandas" />
+											<img src="https://img.shields.io/badge/LlamaIndex-6600cc?style=flat-square&logoColor=white"
+												alt="LlamaIndex" />
+										</td>
+									</tr>
+									<tr>
+										<td><strong>Mobile (Android)</strong></td>
+										<td>
+											<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"
+												alt="Android" />
+											<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"
+												alt="Kotlin" />
+											<img src="https://img.shields.io/badge/Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white"
+												alt="Jetpack Compose" />
+										</td>
+									</tr>
+									<tr>
+										<td><strong>Full Stack / Web</strong></td>
+										<td>
+											<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"
+												alt="TypeScript" />
+											<img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white"
+												alt="Angular" />
+											<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"
+												alt="React" />
+											<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"
+												alt="Vite" />
+										</td>
+									</tr>
+									<tr>
+										<td><strong>Banco de Dados</strong></td>
+										<td>
+											<img src="https://img.shields.io/badge/Firebase-FF6F00?style=flat-square&logo=firebase&logoColor=white"
+												alt="Firebase" />
+											<img src="https://img.shields.io/badge/SQL-00000F?style=flat-square&logo=postgresql&logoColor=white"
+												alt="SQL" />
+											<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white"
+												alt="SQLite" />
+										</td>
+									</tr>
+									<tr>
+										<td><strong>Infra / DevOps</strong></td>
+										<td>
+											<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"
+												alt="Linux" />
+											<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
+												alt="Docker" />
+											<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
+												alt="AWS" />
+											<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"
+												alt="GitHub" />
+										</td>
+									</tr>
+									<tr>
+										<td><strong>Visualização</strong></td>
+										<td>
+											<img src="https://img.shields.io/badge/D3.js-F9A03C?style=flat-square&logo=d3.js&logoColor=white"
+												alt="D3.js" />
+											<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"
+												alt="Streamlit" />
+										</td>
+									</tr>
+									<tr>
+										<td><strong>Segurança</strong></td>
+										<td>
+											<img src="https://img.shields.io/badge/GRC-Hardening-blueviolet?style=flat-square"
+												alt="GRC" />
+											<img src="https://img.shields.io/badge/Zabbix-CC0000?style=flat-square&logo=zabbix&logoColor=white"
+												alt="Zabbix" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -267,13 +477,17 @@
 					<div class="span-1-5">
 						<ul class="contact-icons color1">
 							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/rilen/"
-									target="_blank">linkedin.com/in/rilen</a></li>
+									target="_blank" aria-label="LinkedIn de Rilen Tavares">linkedin.com/in/rilen</a></li>
 							<li class="icon brands fa-github"><a href="https://github.com/rilen"
-									target="_blank">github.com/rilen</a></li>
+									target="_blank" aria-label="GitHub de Rilen Tavares">github.com/rilen</a></li>
 							<li class="icon solid fa-envelope"><a
-									href="mailto:rilen.lima@gmail.com">rilen.lima@gmail.com</a></li>
-							<li class="icon solid fa-map-marker-alt"><span>Rio das Ostras · RJ · Brasil</span></li>
+									href="mailto:rilen.lima@gmail.com" aria-label="Enviar email para Rilen">rilen.lima@gmail.com</a></li>
+							<li class="icon solid fa-map-marker-alt"><span aria-label="Localização">Rio das Ostras · RJ · Brasil</span></li>
 						</ul>
+						<div id="github-activity">
+							<i class="icon solid fa-chart-bar" style="margin-right: 0.5rem;"></i>
+							<span>D3.js Activity Monitor [Live Soon]</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -282,6 +496,17 @@
 				produção.</div>
 
 		</div>
+	</div>
+
+	<!-- Acessibilidade e RilenBot -->
+	<div class="a11y-bar" role="complementary" aria-label="Controles de Acessibilidade">
+		<button onclick="changeFontSize(1)" title="Aumentar Fonte" aria-label="Aumentar Fonte"><i class="fas fa-plus"></i></button>
+		<button onclick="changeFontSize(-1)" title="Diminuir Fonte" aria-label="Diminuir Fonte"><i class="fas fa-minus"></i></button>
+		<button onclick="toggleContrast()" title="Alto Contraste" aria-label="Alternar Alto Contraste"><i class="fas fa-adjust"></i></button>
+	</div>
+
+	<div id="rilenbot-trigger" title="Falar com RilenBot (AI)" aria-label="Ajuda da IA">
+		<i class="fas fa-robot"></i>
 	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
@@ -300,6 +525,23 @@
 				});
 			return false;
 		};
+
+		// Acessibilidade logic
+		let fontSize = 1;
+		window.changeFontSize = function(delta) {
+			fontSize += delta * 0.1;
+			fontSize = Math.min(Math.max(fontSize, 0.8), 1.5);
+			document.documentElement.style.fontSize = `${fontSize}vmax`;
+		};
+
+		window.toggleContrast = function() {
+			document.body.classList.toggle('high-contrast');
+		};
+
+		// RilenBot Interaction
+		document.getElementById('rilenbot-trigger').addEventListener('click', () => {
+			alert('RilenBot: "Olá! Estou sendo treinado com RAG e LlamaIndex para responder sobre meus projetos em breve. Por enquanto, utilize o formulário abaixo!"');
+		});
 	</script>
 </body>
 
