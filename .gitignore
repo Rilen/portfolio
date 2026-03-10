@@ -1,0 +1,13 @@
+# Ignorar arquivos de processamento de imagem (xcf é fonte, não web)
+edição/
+
+# Ignorar cópias de segurança do index
+index copy.html
+index - Copia.html
+index - Copia (2).html
+index_15022026.html
+
+# Ignorar arquivos de configuração do wrangler (gerados no build)
+.wrangler/
+wrangler.jsonc
+wrangler.toml
