@@ -736,8 +736,14 @@
 			}
 		});
 
-		chatInput.addEventListener('keypress', (e) => {
-			if (e.key === 'Enter') chatSend.click();
+		chatInput.addEventListener('keydown', (e) => {
+			if (e.key === ' ') {
+				e.stopPropagation();
+			}
+			if (e.key === 'Enter') {
+				e.preventDefault();
+				chatSend.click();
+			}
 		});
 
 		// D3.js GitHub Activity Pulse
