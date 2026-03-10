@@ -18,12 +18,12 @@
       }
     ],
     "exclude": [
-      "edição/**",
-      "*.xcf",
-      "*Copia*",
-      "index*.html",
+      "**/edi*/**",
+      "**/*.xcf",
+      "**/index*.html",
       "!index.html",
-      ".git/**"
+      ".git/**",
+      ".wrangler/**"
     ]
   },
   "compatibility_flags": [

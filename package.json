@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "npx wrangler deploy --exclude '**/edi*/**' --exclude '**/*.xcf'"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  }
+}

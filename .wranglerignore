@@ -1,0 +1,7 @@
+edição/
+**/*.xcf
+index*.html
+!index.html
+.git/
+.wrangler/
+node_modules/
