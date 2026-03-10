@@ -264,6 +264,26 @@
 			font-size: 0.7rem;
 			opacity: 0.8;
 		}
+
+		/* Mobile Adjustments */
+		@media screen and (max-width: 480px) {
+			#chat-container {
+				width: 90vw;
+				height: 70vh;
+				right: 5vw;
+				bottom: 6rem;
+			}
+			.a11y-bar {
+				right: 0.5rem;
+				gap: 0.5rem;
+				padding: 0.5rem;
+			}
+			.a11y-bar button {
+				width: 2rem;
+				height: 2rem;
+				font-size: 1rem;
+			}
+		}
 	</style>
 </head>
 
@@ -713,13 +733,32 @@
 			chatMessages.scrollTop = chatMessages.scrollHeight;
 		}
 
-		chatSend.addEventListener('click', () => {
+		chatSend.addEventListener('click', async () => {
 			const text = chatInput.value.trim();
 			if (text) {
 				appendMessage('Você', text);
 				chatInput.value = '';
 				
-				// Mocked Edge RAG response for V2 demo
+				/* 
+				// ATIVAÇÃO DO BOT REAL (PRODUÇÃO)
+				// 1. Publique seu Cloudflare Worker conforme REAL_BOT_SETUP.md
+				// 2. Descomente o código abaixo e adicione sua URL:
+				
+				try {
+					const response = await fetch("https://SUA_URL_DO_WORKER.workers.dev", {
+						method: "POST",
+						headers: { "Content-Type": "application/json" },
+						body: JSON.stringify({ question: text })
+					});
+					const data = await response.json();
+					appendMessage('RilenBot', data.reply);
+					return;
+				} catch (err) {
+					console.error("Erro na conexão com o Worker:", err);
+				}
+				*/
+
+				// Mocked Edge RAG response for V2 demo (Fallback)
 				setTimeout(() => {
 					let response = "Interessante! Como especialista em IA e Infra, o Rilen foca muito nesse ponto. ";
 					if (text.toLowerCase().includes('ostras')) {
