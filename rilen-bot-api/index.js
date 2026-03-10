@@ -1,7 +1,7 @@
 export default {
   async fetch(request, env) {
     const corsHeaders = {
-      "Access-Control-Allow-Origin": "*", // Em produção, mude para sua URL (ex: https://rilen.github.io)
+      "Access-Control-Allow-Origin": "https://rilen.github.io",
       "Access-Control-Allow-Methods": "POST, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
     };

@@ -768,7 +768,7 @@
 				try {
 					const workerUrl = "https://rilen-bot-api.rilen-lima.workers.dev"; // ⚠️ Substitua pela sua URL real
 
-					if (workerUrl !== "https://rilen-bot-api.rilen-lima.workers.dev") {
+					if (workerUrl && !workerUrl.includes("SUA_URL_DO_WORKER")) {
 						const response = await fetch(workerUrl, {
 							method: "POST",
 							headers: { "Content-Type": "application/json" },
