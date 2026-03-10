@@ -223,6 +223,8 @@
 			background: #2a2f4a;
 			display: flex;
 			gap: 10px;
+			align-items: center;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
 		}
 
 		#chat-input {
@@ -232,11 +234,17 @@
 			color: white !important;
 			height: 2.5rem !important;
 			padding: 0 0.75rem !important;
+			margin: 0 !important;
 		}
 
 		#chat-send {
 			padding: 0 1rem !important;
 			min-width: auto;
+			height: 2.5rem !important;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 !important;
 		}
 
 		/* High Contrast Mode */
@@ -678,23 +686,14 @@
 			<div id="chat-header">
 				<div class="bot-info">
 					<img src="images/rilenbot-avatar.png" alt="Avatar RilenBot" />
-					<strong>RilenBot</strong>
+					<strong>Nelir</strong>
 				</div>
 				<span style="font-size: 0.7em; opacity: 0.5;">v2.0 - Edge RAG</span>
 			</div>
 			<div id="chat-messages">
 				<div class="message bot">
-					Olá! Sou o RilenBot. Posso falar sobre meus 25 anos de TI, IA ou projetos como o Preve-Ostras. Como
-					posso ajudar?
+					Olá! Sou Nelir, a IA do Rilen. Como posso te ajudar hoje?
 				</div>
-			</div>
-			<div id="chat-suggestions">
-				<button class="suggestion-btn" onclick="sendQuickQuestion('Fale sobre o Preve-Ostras')">🌊
-					Preve-Ostras</button>
-				<button class="suggestion-btn" onclick="sendQuickQuestion('O que é o Deep Work nativo?')">🧠 Deep
-					Work</button>
-				<button class="suggestion-btn" onclick="sendQuickQuestion('CyberSecurity skills')">🛡️
-					Segurança</button>
 			</div>
 			<div id="chat-footer">
 				<input type="text" id="chat-input" placeholder="Digite sua dúvida...">
