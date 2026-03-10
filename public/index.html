@@ -739,26 +739,28 @@
 				appendMessage('Você', text);
 				chatInput.value = '';
 				
-				/* 
-				// ATIVAÇÃO DO BOT REAL (PRODUÇÃO)
-				// 1. Publique seu Cloudflare Worker conforme REAL_BOT_SETUP.md
-				// 2. Descomente o código abaixo e adicione sua URL:
-				
+				// CONEXÃO COM O RILENBOT REAL (Cloudflare Worker)
 				try {
-					const response = await fetch("https://SUA_URL_DO_WORKER.workers.dev", {
-						method: "POST",
-						headers: { "Content-Type": "application/json" },
-						body: JSON.stringify({ question: text })
-					});
-					const data = await response.json();
-					appendMessage('RilenBot', data.reply);
-					return;
+					const workerUrl = "https://SUA_URL_DO_WORKER.workers.dev"; // ⚠️ Substitua pela sua URL real
+					
+					if (workerUrl !== "https://SUA_URL_DO_WORKER.workers.dev") {
+						const response = await fetch(workerUrl, {
+							method: "POST",
+							headers: { "Content-Type": "application/json" },
+							body: JSON.stringify({ question: text })
+						});
+						
+						if (!response.ok) throw new Error("Worker responded with error");
+						
+						const data = await response.json();
+						appendMessage('RilenBot', data.reply);
+						return; 
+					}
 				} catch (err) {
-					console.error("Erro na conexão com o Worker:", err);
+					console.error("Erro no Worker, usando Fallback:", err);
 				}
-				*/
 
-				// Mocked Edge RAG response for V2 demo (Fallback)
+				// Mocked Edge RAG response (Fallback/Demo)
 				setTimeout(() => {
 					let response = "Interessante! Como especialista em IA e Infra, o Rilen foca muito nesse ponto. ";
 					if (text.toLowerCase().includes('ostras')) {

@@ -1,25 +1,29 @@
-# Bloqueio total de arquivos grandes e binários do Wrangler
-node_modules/
-node_modules/**
-.wrangler/
-.wrangler/**
+# Bloqueio total de arquivos grandes e binários no deploy do Wrangler
+node_modules
+.git
+.github
+.wrangler
 workerd
 **/workerd/**
+rilen-bot-api/
 
-# Excluir pastas de edição (GIMP/Photoshop)
+# Excluir pastas de edição e fontes/sass
 edição/
 **/edi*/**
 **/*.xcf
+public/assets/sass/
+public/assets/webfonts/*.svg
 
-# Excluir backups e arquivos de sistema
-.git/
-.github/
-index*.html
-!index.html
-README*
-LICENSE*
-REAL_BOT_SETUP.md
-wrangler.jsonc
+# Arquivos de configuração e sistema
 package.json
 package-lock.json
 bun.lockb
+wrangler.toml
+wrangler.jsonc
+REAL_BOT_SETUP.md
+README*
+LICENSE*
+
+# Backups de index
+index-*.html
+!index.html
