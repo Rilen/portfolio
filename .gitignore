@@ -11,3 +11,8 @@ index_15022026.html
 .wrangler/
 wrangler.jsonc
 wrangler.toml
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
