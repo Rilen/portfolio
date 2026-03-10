@@ -1,6 +1,0 @@
-name = "portfolio"
-compatibility_date = "2024-03-01"
-
-[assets]
-directory = "."
-# As exclusões agora são lidas automaticamente do .wranglerignore ou .gitignore
