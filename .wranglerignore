@@ -1,7 +1,18 @@
+# Excluir pastas de edição e arquivos pesados
 edição/
+edição/**
+**/edição/**
 **/*.xcf
+pic01.xcf
+pic02.xcf
+pic03.xcf
+
+# Excluir backups do index
 index*.html
 !index.html
-.git/
+
+# Excluir logs e ambientes
 .wrangler/
 node_modules/
+package-lock.json
+wrangler.jsonc

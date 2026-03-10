@@ -3,19 +3,4 @@ compatibility_date = "2024-03-01"
 
 [assets]
 directory = "."
-binding = "ASSETS"
-
-[upload]
-# Regras de exclusão definitivas
-exclude = [
-    "**/edi*/**",
-    "**/*.xcf",
-    "**/index*.html",
-    "!index.html",
-    ".git/**",
-    ".wrangler/**",
-    "node_modules/**",
-    "README*",
-    "LICENSE*",
-    "REAL_BOT_SETUP.md"
-]
+# As exclusões agora são lidas automaticamente do .wranglerignore ou .gitignore
