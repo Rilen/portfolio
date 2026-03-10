@@ -7,7 +7,5 @@ index - Copia.html
 index - Copia (2).html
 index_15022026.html
 
-# Ignorar arquivos de configuração do wrangler (gerados no build)
+# Ignorar arquivos de configuração do wrangler (diretórios gerados)
 .wrangler/
-wrangler.jsonc
-wrangler.toml
